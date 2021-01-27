@@ -7,6 +7,7 @@ Why this script, the primary purpose of this script was the redirect the output 
 
 Requirements
 ------------
+---
 
 Many of the requirements are from the Ansible Tower Administrators Guide: https://docs.ansible.com/ansible-tower/latest/html/administration/backup_restore.html#ag-clustering-backup-restore
 
@@ -20,8 +21,9 @@ Many of the requirements are from the Ansible Tower Administrators Guide: https:
 
 * If the backup file is placed in the same directory as the `setup.sh` installer, the restore playbook will automatically locate the restore files. In this case, you do not need to use the `restore_backup_file` extra var to specify the location of the backup file.
 
-ansible-tower-backup-script Variables
+Variables
 --------------
+---
 
 * `SOURCE` - This is the location or initial install directory of Ansible Tower that contains `setup.sh`. For example, `ansible-tower-setup-3.7.3-1`
 
@@ -33,6 +35,7 @@ ansible-tower-backup-script Variables
 
 Usage and Install
 ----------------
+---
 
 This backup script will keep the number of backup in a directory structure of YEAR and WEEK OF THE YEAR.  It will purge old backups when the `KEEP` criteria is met. 
 
