@@ -48,4 +48,4 @@ echo "
 
 " >>$LOG
 
-
+deactivate
