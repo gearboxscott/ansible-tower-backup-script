@@ -39,7 +39,7 @@ Usage and Install
 
 This backup script will keep the number of backup in a directory structure of YEAR and WEEK OF THE YEAR.  It will purge old backups when the `KEEP` criteria is met. 
 
-* Place `ansible-tower-backup.sh` in /usr/local/bin
+* Place `ansible-tower-backup.sh` in /usr/local/sbin
 
 * `chmod 700 /usr/local/sbin/ansible-tower-backup.sh`
 
